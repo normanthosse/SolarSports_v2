@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        style="@style/img_footer"/>
+
+    <TextView
+
+        style="@style/txv_footer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="140dp">
+
+
+
+        <EditText
+            android:id="@+id/edtxEmailE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtxPasswordE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_password"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnIngresarE"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_enter"
+            android:backgroundTint="@color/verdeAPP"
+            style="@style/btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txv_question"
+            android:layout_gravity="center"
+            android:textColor="@color/verdeAPP"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterE"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_register"
+            android:backgroundTint="@color/verdeAPP"
+            style="@style/btn"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

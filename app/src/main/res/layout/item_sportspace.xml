@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:padding="1dp"
+        >
+
+        <TextView
+            android:id="@+id/txvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field: name"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : location"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City : name"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone : Number"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potencia Instalada : Number"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvEnergyGenerat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energia Generada : Number"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvEnergyConsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energia Consumida : Number"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes : Mes"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/verdeAPP"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

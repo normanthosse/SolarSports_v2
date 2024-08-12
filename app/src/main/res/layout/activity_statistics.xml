@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatisticsActivity"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        style="@style/img_footer"/>
+
+    <TextView
+        style="@style/txv_footer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCCIÓN ENERGÍA SOLAR POR MESES"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/myTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdeAPP"
+                android:layout_marginTop="20dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Mes"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Sport Space"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Potencia Instalada"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Energía Generada"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Energía Consumida"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="450dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="ESTADISTICAS CONSOLIDADAS"
+            android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/power"
+                    android:scaleType="centerCrop"
+                    android:background="@color/verdeAPP"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewTotalPower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Power: 0.0"
+                    android:background="@color/verdeAPP"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:src="@drawable/generated"
+                android:scaleType="centerCrop"
+                android:background="@color/verdeAPP"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewTotalEnergyGenerated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Energy Generated: 0.0"
+                android:background="@color/verdeAPP"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:src="@drawable/consumed"
+                android:scaleType="centerCrop"
+                android:background="@color/verdeAPP"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewTotalEnergyConsumed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Energy Consumed: 0.0"
+                android:background="@color/verdeAPP"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/difference"
+                    android:scaleType="centerCrop"
+                    android:background="@color/verdeAPP"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:id="@+id/textViewDifference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Difference: 0.0"
+                    android:background="@color/verdeAPP"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:src="@drawable/efficiency"
+                android:scaleType="centerCrop"
+                android:background="@color/verdeAPP"
+                android:layout_marginEnd="5dp"
+                />
+            <TextView
+                android:id="@+id/textViewEfficiency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Efficiency: 0.0"
+                android:background="@color/verdeAPP"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_marginBottom="80dp"
+        android:text="@string/btn_exit"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn"
+        />
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:padding="10dp"/>
+
+    <ImageView
+        style="@style/img_footer"/>
+
+    <TextView
+        style="@style/txv_footer"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="180dp"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/verdeAPP"
+            android:elevation="4dp"
+            android:gravity="center|right"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txvCampos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="CAMPOS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txvCanchas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="CANCHAS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txvSalas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="SALAS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txvPiscinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="PISCINAS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_spacesSports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_marginBottom="130dp"
+        android:text="Agregar SportSpace"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_marginBottom="80dp"
+        android:text="Eliminar SportSpace"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn">
+
+    </Button>
+
+</FrameLayout>

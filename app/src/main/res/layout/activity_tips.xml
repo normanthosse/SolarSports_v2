@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipsActivity"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imgFooter"
+            style="@style/img_footer"/>
+
+        <TextView
+            android:id="@+id/txvFooter"
+            style="@style/txv_footer"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡ TEN EN CUENTA ! "
+            android:textColor="@color/verdeAPP"
+            android:layout_marginTop="170dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="250dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/txvTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:padding="15dp"
+            android:textSize="21sp"
+            android:background="@color/verdeAPP"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_marginBottom="120dp"
+            android:text="@string/btn_exit"
+            android:layout_gravity="bottom|center_horizontal"
+            android:backgroundTint="@color/verdeAPP"
+            style="@style/btn"
+            />
+
+
+
+    </FrameLayout>
+
+
+
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        style="@style/img_footer"/>
+
+    <TextView
+        style="@style/txv_footer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="240dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/category_array" />
+
+                <EditText
+                    android:id="@+id/edtxRegName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nombre"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Dirección"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Ciudad"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Teléfono"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegPower"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Potencia Instalada"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegEnergyGen"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Energía Generada"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/edtxRegEnergyConsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Energía Consumida"
+                    android:layout_below="@id/spinnerCategory"
+                    android:layout_marginTop="5dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/month_array" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_marginBottom="180dp"
+        android:text="Registrar Nuevo"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_marginBottom="130dp"
+        android:text="Borrar SportSpace"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_marginBottom="80dp"
+        android:text="Regresar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/verdeAPP"
+        style="@style/btn">
+
+    </Button>
+
+</FrameLayout>

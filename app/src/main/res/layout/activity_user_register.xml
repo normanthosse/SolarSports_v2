@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegisterActivity"
+    android:fontFamily="@font/roboto"
+    android:background="@drawable/frame_border"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        style="@style/img_footer"/>
+
+    <TextView
+        style="@style/txv_footer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="140dp">
+
+        <EditText
+            android:id="@+id/edtxName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_name"
+            android:inputType="textPersonName"
+            android:padding="4dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtxEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtxPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_password"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/edtxConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edtx_confirmpass"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar tèrminos y condiciones de polìtica de tratamiento de datos"
+            android:textAlignment="inherit"
+            />
+
+        <Button
+            android:id="@+id/btnRegisterR"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_register"
+            android:backgroundTint="@color/verdeAPP"
+            style="@style/btn"/>
+
+        <Button
+            android:id="@+id/btnExitR"
+            android:layout_marginTop="25dp"
+            android:text="@string/btn_exit"
+            android:backgroundTint="@color/verdeAPP"
+            style="@style/btn"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

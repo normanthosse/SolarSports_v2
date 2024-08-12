@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SolarSports v2</string>
+    <string name="btn_enter">INGRESAR</string>
+    <string name="btn_register">REGISTRARSE</string>
+    <string name="btn_exit">SALIR</string>
+    <string name="btn_save">GUARDAR</string>
+    <string name="txv_question">¿No tienes una cuenta?</string>
+    <string name="txv_footer">Juega más sostenible</string>
+    <string name="edtx_name">Nombres y Apellidos</string>
+    <string name="edtx_email">Correo Electrónico</string>
+    <string name="edtx_password">Contraseña</string>
+    <string name="edtx_confirmpass">Confirmar Contraseña</string>
+    <string name="btn_category">CATEGORÍAS</string>
+    <string name="btn_statistics">ESTADÍSTICAS</string>
+    <string name="btn_tips">TIPS</string>
+
+    <string-array name="category_array">
+        <item>Seleccione Categoría</item>
+        <item>Field</item>
+        <item>Court</item>
+        <item>Room</item>
+        <item>Pool</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>Seleccione un Mes</item>
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+</resources>
